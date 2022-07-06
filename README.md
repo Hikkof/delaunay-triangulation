@@ -1,3 +1,2 @@
-# delaunay-triangulation
-under construction
-tomorow i probabably will be able to copy existing code and mb make some optimalizations
+Delaunay Triangulatin using Bowyer-Watson algorithm.
+The program runs on randomly generated points on a torus and is unoptimized.
