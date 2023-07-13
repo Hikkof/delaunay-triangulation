@@ -14,13 +14,11 @@ struct Point
 {
 	double x, y;
 	
-	
 	Point(double x = 0, double y = 0)
 	{
 		this->x = x;
 		this->y = y;
 	}
-	
 	
 	double distance(Point point)
 	{
@@ -28,7 +26,6 @@ struct Point
 		double dy = this->y-point.y;
 		return sqrt(dx*dx + dy*dy);
 	}
-	
 	
 	bool operator==(Point point)
 	{
@@ -46,13 +43,11 @@ struct Edge
 	Point a = *(new Point);
 	Point b = *(new Point);
 	
-	
 	Edge(Point a = *(new Point), Point b = *(new Point))
 	{
 		this->a = a;
 		this->b = b;
 	}
-	
 	
 	bool operator==(Edge edge)
 	{
@@ -72,14 +67,12 @@ struct Triangle
 	Point b = *(new Point);
 	Point c = *(new Point);
 	
-	
 	Triangle(Point a = *(new Point), Point b = *(new Point), Point c = *(new Point))
 	{
 		this->a = a;
 		this->b = b;
 		this->c = c;
 	}
-	
 	
 	bool compare_eges(Edge edge)
 	{
@@ -94,7 +87,6 @@ struct Triangle
 		return false;
 	}
 	
-	
 	bool operator==(Triangle triangle)
 	{
 		if(this->a == triangle.a && this->b == triangle.b &&
@@ -104,7 +96,6 @@ struct Triangle
 		}
 		return false;
 	}
-	
 	
 	Point circle_center()
 	{
@@ -124,4 +115,3 @@ struct Triangle
 		return p;
 	}
 };
-
